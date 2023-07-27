@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cherry+Swash&family=Moirai+One&family=Outfit:wght@100;200;300;400;500;800&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cherry Swash', cursive;
+    padding: 30px 20px;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px;
+    background-color: #F2E77A;
+}
+
+#section-search {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 24px;
+    margin-right: 10px;
+    width: 30px;
+}
+
+#search,
+#type {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    font-family: 'Cherry Swash', cursive;
+}
+
+
+#pokedex-box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+#pokedex-box {
+    position: relative;
+    border-radius: 20px;
+    width: 200px;
+    padding: 60px 20px 30px;
+    text-align: center;
+}
+
+#pokedex-box img{
+    width: 150px;
+}
+
+#poke-id {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 40px;
+    font-family: 'Moirai One', cursive;
+    font-weight: bolder;
+}
+
+#poke-name {
+    font-size: 30px;
+}
+
+#poke-type {
+   font-size: 19px;
+   margin-top: 10px;
+}
+
+
+/* individual pokemon info page */
+#single-pokemon {
+    padding-top: 50px;
+}
+
+#back-btn {
+    border: none;
+    font-size: 40px;
+    background: none;
+    margin-top: 20px;
+}
+
+.single-pokemon-num {
+    text-align: center;
+    font-size: 26px;
+}
+
+.single-pokemon-name {
+    font-size: 50px;
+    text-align: center;
+}
+
+.single-main-img {
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#single-sub-img {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.single-side-img {
+    width: 200px;
+    height: 200px;
+}
+
+#single-description {
+    font-size: 20px;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#single-description p{
+    padding: 15px 0px;
+    font-size: 30px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #pokedex-box-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #pokedex-box-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
